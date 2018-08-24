@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B17ABF6211C8AA60040D172 /* firstConveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17ABF5211C8AA60040D172 /* firstConveyViewController.swift */; };
+		1B17ABF8211C8C660040D172 /* secondConveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17ABF7211C8C660040D172 /* secondConveyViewController.swift */; };
+		1B17ABFA211D08FB0040D172 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17ABF9211D08FB0040D172 /* QRCodeViewController.swift */; };
+		1B1F6B5F212547190057A633 /* positionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F6B5E212547190057A633 /* positionView.xib */; };
+		1B1F6B612125472E0057A633 /* positionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F6B602125472E0057A633 /* positionView.swift */; };
+		1B1F6B63212555450057A633 /* calculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F6B62212555450057A633 /* calculationViewController.swift */; };
+		1B3B874F212EA06700139EBA /* syncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3B874E212EA06700139EBA /* syncViewController.swift */; };
+		1B641634211DF0A5000FB2CC /* walletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B641633211DF0A5000FB2CC /* walletViewController.swift */; };
+		1B98DAF9211959770016DD60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98DAF8211959770016DD60 /* AppDelegate.swift */; };
+		1B98DAFE211959770016DD60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B98DAFC211959770016DD60 /* Main.storyboard */; };
+		1B98DB01211959770016DD60 /* Euphoria.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B98DAFF211959770016DD60 /* Euphoria.xcdatamodeld */; };
+		1B98DB03211959780016DD60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B98DB02211959780016DD60 /* Assets.xcassets */; };
+		1B98DB06211959780016DD60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B98DB04211959780016DD60 /* LaunchScreen.storyboard */; };
+		1B98DB0F21197A4F0016DD60 /* noteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98DB0E21197A4F0016DD60 /* noteViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B17ABF5211C8AA60040D172 /* firstConveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstConveyViewController.swift; sourceTree = "<group>"; };
+		1B17ABF7211C8C660040D172 /* secondConveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondConveyViewController.swift; sourceTree = "<group>"; };
+		1B17ABF9211D08FB0040D172 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		1B1F6B5E212547190057A633 /* positionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = positionView.xib; sourceTree = "<group>"; };
+		1B1F6B602125472E0057A633 /* positionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = positionView.swift; sourceTree = "<group>"; };
+		1B1F6B62212555450057A633 /* calculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculationViewController.swift; sourceTree = "<group>"; };
+		1B3B874E212EA06700139EBA /* syncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syncViewController.swift; sourceTree = "<group>"; };
+		1B641633211DF0A5000FB2CC /* walletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletViewController.swift; sourceTree = "<group>"; };
+		1B98DAF5211959760016DD60 /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B98DAF8211959770016DD60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B98DAFD211959770016DD60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B98DB00211959770016DD60 /* Euphoria.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Euphoria.xcdatamodel; sourceTree = "<group>"; };
+		1B98DB02211959780016DD60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B98DB05211959780016DD60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B98DB07211959780016DD60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B98DB0E21197A4F0016DD60 /* noteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B98DAF2211959760016DD60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B98DAEC211959760016DD60 = {
+			isa = PBXGroup;
+			children = (
+				1B98DAF7211959760016DD60 /* Euphoria */,
+				1B98DAF6211959760016DD60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B98DAF6211959760016DD60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B98DAF5211959760016DD60 /* Euphoria.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B98DAF7211959760016DD60 /* Euphoria */ = {
+			isa = PBXGroup;
+			children = (
+				1B17ABF5211C8AA60040D172 /* firstConveyViewController.swift */,
+				1B17ABF7211C8C660040D172 /* secondConveyViewController.swift */,
+				1B98DAF8211959770016DD60 /* AppDelegate.swift */,
+				1B98DB0E21197A4F0016DD60 /* noteViewController.swift */,
+				1B641633211DF0A5000FB2CC /* walletViewController.swift */,
+				1B17ABF9211D08FB0040D172 /* QRCodeViewController.swift */,
+				1B1F6B5E212547190057A633 /* positionView.xib */,
+				1B1F6B602125472E0057A633 /* positionView.swift */,
+				1B98DAFC211959770016DD60 /* Main.storyboard */,
+				1B3B874E212EA06700139EBA /* syncViewController.swift */,
+				1B1F6B62212555450057A633 /* calculationViewController.swift */,
+				1B98DB02211959780016DD60 /* Assets.xcassets */,
+				1B98DB04211959780016DD60 /* LaunchScreen.storyboard */,
+				1B98DB07211959780016DD60 /* Info.plist */,
+				1B98DAFF211959770016DD60 /* Euphoria.xcdatamodeld */,
+			);
+			path = Euphoria;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B98DAF4211959760016DD60 /* Euphoria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B98DB0A211959780016DD60 /* Build configuration list for PBXNativeTarget "Euphoria" */;
+			buildPhases = (
+				1B98DAF1211959760016DD60 /* Sources */,
+				1B98DAF2211959760016DD60 /* Frameworks */,
+				1B98DAF3211959760016DD60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Euphoria;
+			productName = Euphoria;
+			productReference = 1B98DAF5211959760016DD60 /* Euphoria.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B98DAED211959760016DD60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "李政恩";
+				TargetAttributes = {
+					1B98DAF4211959760016DD60 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1B98DAF0211959760016DD60 /* Build configuration list for PBXProject "Euphoria" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B98DAEC211959760016DD60;
+			productRefGroup = 1B98DAF6211959760016DD60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B98DAF4211959760016DD60 /* Euphoria */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B98DAF3211959760016DD60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B98DB06211959780016DD60 /* LaunchScreen.storyboard in Resources */,
+				1B1F6B5F212547190057A633 /* positionView.xib in Resources */,
+				1B98DB03211959780016DD60 /* Assets.xcassets in Resources */,
+				1B98DAFE211959770016DD60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B98DAF1211959760016DD60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B17ABFA211D08FB0040D172 /* QRCodeViewController.swift in Sources */,
+				1B641634211DF0A5000FB2CC /* walletViewController.swift in Sources */,
+				1B17ABF8211C8C660040D172 /* secondConveyViewController.swift in Sources */,
+				1B1F6B63212555450057A633 /* calculationViewController.swift in Sources */,
+				1B98DB0F21197A4F0016DD60 /* noteViewController.swift in Sources */,
+				1B17ABF6211C8AA60040D172 /* firstConveyViewController.swift in Sources */,
+				1B1F6B612125472E0057A633 /* positionView.swift in Sources */,
+				1B3B874F212EA06700139EBA /* syncViewController.swift in Sources */,
+				1B98DAF9211959770016DD60 /* AppDelegate.swift in Sources */,
+				1B98DB01211959770016DD60 /* Euphoria.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B98DAFC211959770016DD60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B98DAFD211959770016DD60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B98DB04211959780016DD60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B98DB05211959780016DD60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B98DB08211959780016DD60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B98DB09211959780016DD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B98DB0B211959780016DD60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZZMY98FBG;
+				INFOPLIST_FILE = Euphoria/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Datoto.Euphoria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1B98DB0C211959780016DD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZZMY98FBG;
+				INFOPLIST_FILE = Euphoria/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Datoto.Euphoria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B98DAF0211959760016DD60 /* Build configuration list for PBXProject "Euphoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B98DB08211959780016DD60 /* Debug */,
+				1B98DB09211959780016DD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B98DB0A211959780016DD60 /* Build configuration list for PBXNativeTarget "Euphoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B98DB0B211959780016DD60 /* Debug */,
+				1B98DB0C211959780016DD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B98DAFF211959770016DD60 /* Euphoria.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B98DB00211959770016DD60 /* Euphoria.xcdatamodel */,
+			);
+			currentVersion = 1B98DB00211959770016DD60 /* Euphoria.xcdatamodel */;
+			path = Euphoria.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1B98DAED211959760016DD60 /* Project object */;
+}
