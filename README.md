@@ -1,3 +1,5 @@
+![default](https://user-images.githubusercontent.com/32284698/44624028-03068880-a914-11e8-97ef-fe0ccd4e444b.png)
+
 # Euphoria
 An App to help people calculate the value of New Taiwan Dollar which is denominated in Chinese Yuan and demonstrate my programming skill in Swift. You could tap the picture above to see the demo on another page.
 
@@ -17,6 +19,7 @@ An App to help people calculate the value of New Taiwan Dollar which is denomina
 * Knowledge of different ways about transferring the data and different kind of Queue.
 * Knowledge about how to add the function of scanning the QR Code.
 * More Knowledge of UIView, UITable, CALayer and Core Data.
+* Basic knowledge about the application and rationale about blockchain.
 
 ### Authors
 
