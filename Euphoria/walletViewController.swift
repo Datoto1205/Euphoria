@@ -2,14 +2,14 @@
 //  walletViewController.swift
 //  Euphoria
 //
-//  Created by 李政恩 on 11/08/2018.
-//  Copyright © 2018 李政恩. All rights reserved.
+//  Created by Li Cheng-En in 2018.
+//  Copyright © 2018 Li Cheng-En. All rights reserved.
 //
 
 import UIKit
 
 class walletViewController: UIViewController {
-
+    
     @IBOutlet weak var walletAmount: UILabel!
     @IBOutlet weak var gradientButton: UIButton!
     
@@ -34,7 +34,7 @@ class walletViewController: UIViewController {
         walletAmount.text = "￥  " + String(amount)
         
         generateNotificationForTransferingTheData()
-        generateUIViewAndUILabelThroughCode()
+        generateUIViewThroughCode()
         createDecorationButtom()
         editUILabelThroughCode()
     }
@@ -44,7 +44,7 @@ class walletViewController: UIViewController {
     }
     
     
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -73,8 +73,6 @@ class walletViewController: UIViewController {
         // This code, which could transfer the color code to the RGB type, was found from https://stackoverflow.com/questions/24074257/how-can-i-use-uicolorfromrgb-in-swift
     }
     
-    
-    
     func generateNotificationForTransferingTheData() {
         let notification = Notification.Name("Charge")
         NotificationCenter.default.addObserver(self, selector: #selector(getUpdateNoti(noti:)), name: notification, object: nil)
@@ -84,7 +82,7 @@ class walletViewController: UIViewController {
     @objc func getUpdateNoti(noti:Notification) {
         if addValue == true {
             amount = amount + 100
-            walletAmount.text = "RMB  " + String(amount)
+            walletAmount.text = "￥  " + String(amount)
             addValue = false
         }
     }
@@ -129,43 +127,37 @@ class walletViewController: UIViewController {
         }
     }
     
-    
-    
-    
-    
-    func generateUIViewAndUILabelThroughCode() {
+    func generateUIViewThroughCode() {
         let subViewA = UIView(frame: CGRect(x: 20, y: view.center.y - 20, width: view.bounds.width - 40, height: 100))
         subViewA.backgroundColor = hexStringToUIColor(hex: "#FFEFBA")
         view.addSubview(subViewA)
         // I could use this code to create a UIView through codes.
     }
     
-    
-    
-    
     func createDecorationButtom() {
         gradientButton.layer.cornerRadius = 25
         gradientButton.layer.masksToBounds = true
         gradientButton.setTitle("Get The Premium", for: .normal)
         gradientButton.setTitleColor(UIColor.white, for: .normal)
-        // Font property is deprecated after iOS 3.0.
+        // Font property is deprecated after swift 3.0.
         
         let cgcolorA = UIColor(red: 0/255, green: 242/255, blue: 96/255, alpha: 1).cgColor
         let cgcolorB = UIColor(red: 5/255, green: 117/255, blue: 230/255, alpha: 1).cgColor
         self.gradientButton.applyGradient(colors: [cgcolorA, cgcolorB])
+        // I could add a gradient color to a button through the codes above and the codes in the extension below.
     }
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
-
 
 
 

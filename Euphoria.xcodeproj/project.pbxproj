@@ -13,6 +13,8 @@
 		1B1F6B5F212547190057A633 /* positionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F6B5E212547190057A633 /* positionView.xib */; };
 		1B1F6B612125472E0057A633 /* positionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F6B602125472E0057A633 /* positionView.swift */; };
 		1B1F6B63212555450057A633 /* calculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F6B62212555450057A633 /* calculationViewController.swift */; };
+		1B20325A212FB22400254A77 /* blockChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B203259212FB22400254A77 /* blockChainViewController.swift */; };
+		1B20325D212FE04B00254A77 /* block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20325C212FE04B00254A77 /* block.swift */; };
 		1B3B874F212EA06700139EBA /* syncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3B874E212EA06700139EBA /* syncViewController.swift */; };
 		1B641634211DF0A5000FB2CC /* walletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B641633211DF0A5000FB2CC /* walletViewController.swift */; };
 		1B98DAF9211959770016DD60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98DAF8211959770016DD60 /* AppDelegate.swift */; };
@@ -21,6 +23,8 @@
 		1B98DB03211959780016DD60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B98DB02211959780016DD60 /* Assets.xcassets */; };
 		1B98DB06211959780016DD60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B98DB04211959780016DD60 /* LaunchScreen.storyboard */; };
 		1B98DB0F21197A4F0016DD60 /* noteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B98DB0E21197A4F0016DD60 /* noteViewController.swift */; };
+		1BADAE76212FE21100C0A2FD /* blockChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BADAE75212FE21100C0A2FD /* blockChain.swift */; };
+		1BADAE822130592000C0A2FD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BADAE812130592000C0A2FD /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,8 @@
 		1B1F6B5E212547190057A633 /* positionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = positionView.xib; sourceTree = "<group>"; };
 		1B1F6B602125472E0057A633 /* positionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = positionView.swift; sourceTree = "<group>"; };
 		1B1F6B62212555450057A633 /* calculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculationViewController.swift; sourceTree = "<group>"; };
+		1B203259212FB22400254A77 /* blockChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blockChainViewController.swift; sourceTree = "<group>"; };
+		1B20325C212FE04B00254A77 /* block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = block.swift; sourceTree = "<group>"; };
 		1B3B874E212EA06700139EBA /* syncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syncViewController.swift; sourceTree = "<group>"; };
 		1B641633211DF0A5000FB2CC /* walletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walletViewController.swift; sourceTree = "<group>"; };
 		1B98DAF5211959760016DD60 /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,8 +44,9 @@
 		1B98DB00211959770016DD60 /* Euphoria.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Euphoria.xcdatamodel; sourceTree = "<group>"; };
 		1B98DB02211959780016DD60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B98DB05211959780016DD60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1B98DB07211959780016DD60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B98DB0E21197A4F0016DD60 /* noteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteViewController.swift; sourceTree = "<group>"; };
+		1BADAE75212FE21100C0A2FD /* blockChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blockChain.swift; sourceTree = "<group>"; };
+		1BADAE812130592000C0A2FD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B20325B212FE01100254A77 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B98DAF8211959770016DD60 /* AppDelegate.swift */,
+				1B98DB02211959780016DD60 /* Assets.xcassets */,
+				1B98DB04211959780016DD60 /* LaunchScreen.storyboard */,
+				1B98DAFF211959770016DD60 /* Euphoria.xcdatamodeld */,
+				1BADAE812130592000C0A2FD /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		1B6D448C21329ACD008D3237 /* Files Concerning xib File */ = {
+			isa = PBXGroup;
+			children = (
+				1B1F6B5E212547190057A633 /* positionView.xib */,
+				1B1F6B602125472E0057A633 /* positionView.swift */,
+			);
+			path = "Files Concerning xib File";
+			sourceTree = "<group>";
+		};
+		1B6D448D21329BD5008D3237 /* Files Concerning Blockchain */ = {
+			isa = PBXGroup;
+			children = (
+				1B20325C212FE04B00254A77 /* block.swift */,
+				1BADAE75212FE21100C0A2FD /* blockChain.swift */,
+				1B203259212FB22400254A77 /* blockChainViewController.swift */,
+			);
+			path = "Files Concerning Blockchain";
+			sourceTree = "<group>";
+		};
 		1B98DAEC211959760016DD60 = {
 			isa = PBXGroup;
 			children = (
@@ -72,21 +110,17 @@
 		1B98DAF7211959760016DD60 /* Euphoria */ = {
 			isa = PBXGroup;
 			children = (
-				1B17ABF5211C8AA60040D172 /* firstConveyViewController.swift */,
-				1B17ABF7211C8C660040D172 /* secondConveyViewController.swift */,
-				1B98DAF8211959770016DD60 /* AppDelegate.swift */,
-				1B98DB0E21197A4F0016DD60 /* noteViewController.swift */,
+				1B1F6B62212555450057A633 /* calculationViewController.swift */,
 				1B641633211DF0A5000FB2CC /* walletViewController.swift */,
 				1B17ABF9211D08FB0040D172 /* QRCodeViewController.swift */,
-				1B1F6B5E212547190057A633 /* positionView.xib */,
-				1B1F6B602125472E0057A633 /* positionView.swift */,
-				1B98DAFC211959770016DD60 /* Main.storyboard */,
 				1B3B874E212EA06700139EBA /* syncViewController.swift */,
-				1B1F6B62212555450057A633 /* calculationViewController.swift */,
-				1B98DB02211959780016DD60 /* Assets.xcassets */,
-				1B98DB04211959780016DD60 /* LaunchScreen.storyboard */,
-				1B98DB07211959780016DD60 /* Info.plist */,
-				1B98DAFF211959770016DD60 /* Euphoria.xcdatamodeld */,
+				1B98DB0E21197A4F0016DD60 /* noteViewController.swift */,
+				1B17ABF5211C8AA60040D172 /* firstConveyViewController.swift */,
+				1B17ABF7211C8C660040D172 /* secondConveyViewController.swift */,
+				1B98DAFC211959770016DD60 /* Main.storyboard */,
+				1B6D448C21329ACD008D3237 /* Files Concerning xib File */,
+				1B6D448D21329BD5008D3237 /* Files Concerning Blockchain */,
+				1B20325B212FE01100254A77 /* Support Files */,
 			);
 			path = Euphoria;
 			sourceTree = "<group>";
@@ -152,6 +186,7 @@
 				1B98DB06211959780016DD60 /* LaunchScreen.storyboard in Resources */,
 				1B1F6B5F212547190057A633 /* positionView.xib in Resources */,
 				1B98DB03211959780016DD60 /* Assets.xcassets in Resources */,
+				1BADAE822130592000C0A2FD /* Info.plist in Resources */,
 				1B98DAFE211959770016DD60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B20325A212FB22400254A77 /* blockChainViewController.swift in Sources */,
 				1B17ABFA211D08FB0040D172 /* QRCodeViewController.swift in Sources */,
 				1B641634211DF0A5000FB2CC /* walletViewController.swift in Sources */,
 				1B17ABF8211C8C660040D172 /* secondConveyViewController.swift in Sources */,
@@ -171,6 +207,8 @@
 				1B17ABF6211C8AA60040D172 /* firstConveyViewController.swift in Sources */,
 				1B1F6B612125472E0057A633 /* positionView.swift in Sources */,
 				1B3B874F212EA06700139EBA /* syncViewController.swift in Sources */,
+				1BADAE76212FE21100C0A2FD /* blockChain.swift in Sources */,
+				1B20325D212FE04B00254A77 /* block.swift in Sources */,
 				1B98DAF9211959770016DD60 /* AppDelegate.swift in Sources */,
 				1B98DB01211959770016DD60 /* Euphoria.xcdatamodeld in Sources */,
 			);
@@ -318,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BZZMY98FBG;
-				INFOPLIST_FILE = Euphoria/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Euphoria/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -327,7 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Datoto.Euphoria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -337,7 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BZZMY98FBG;
-				INFOPLIST_FILE = Euphoria/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Euphoria/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -346,7 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Datoto.Euphoria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

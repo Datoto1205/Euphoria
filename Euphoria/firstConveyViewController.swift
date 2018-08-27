@@ -2,14 +2,14 @@
 //  firstConveyViewController.swift
 //  Euphoria
 //
-//  Created by 李政恩 on 09/08/2018.
-//  Copyright © 2018 李政恩. All rights reserved.
+//  Created by Li Cheng-En in 2018.
+//  Copyright © 2018 Li Cheng-En. All rights reserved.
 //
 
 import UIKit
 
 class firstConveyViewController: UIViewController {
-
+    
     @IBOutlet weak var girlFriendName: UITextField!
     @IBOutlet weak var momName: UILabel!
     @IBAction func goToNextPage(_ sender: UIButton) {
@@ -24,7 +24,7 @@ class firstConveyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let notification = Notification.Name("Hi")
+        let notification = Notification.Name("motherName")
         NotificationCenter.default.addObserver(self, selector: #selector(getUpdateNoti(noti:)), name: notification, object: nil)
         // If I want to use notification to transfer the data, I need to set a observer first, so that it would do the function I want, which is getUpdateNoti here, when it heard the notification generated in other pages.
     }
@@ -48,14 +48,13 @@ class firstConveyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
     // Transfer the data throught the function "performSegue"
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         AInFirstPage = girlFriendName.text
         let controller = segue.destination as! secondConveyViewController
         controller.AInSecondPage = AInFirstPage /* I need to set the variable in second page first.*/
     }
+    // It seems that the error "SIGNAL SIGBART" would occurred when a page which was settled by this function connect to several segues. So I should avoid to use this way to transfer the data.
     
     
     

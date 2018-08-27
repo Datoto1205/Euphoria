@@ -2,8 +2,8 @@
 //  QRCodeViewController.swift
 //  Euphoria
 //
-//  Created by 李政恩 on 10/08/2018.
-//  Copyright © 2018 李政恩. All rights reserved.
+//  Created by Li Cheng-En in 2018.
+//  Copyright © 2018 Li Cheng-En. All rights reserved.
 //
 
 import UIKit
@@ -20,13 +20,15 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         drawARectOfQRScope()
         addInstructionLabel()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func metadataInput() {
+        // One of the function to add the function of scanning the QR Code.
+        
         let session = AVCaptureSession()
         
         let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
@@ -52,6 +54,8 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     }
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        // One of the function to add the function of scanning the QR Code.
+        
         if metadataObjects != nil && metadataObjects.count != 0 {
             if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject {
                 if object.type == AVMetadataObject.ObjectType.qr {
@@ -64,7 +68,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             }
         }
     }
-
+    
     
     
     func drawARectOfQRScope() {
@@ -78,29 +82,29 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         shapeLayer.fillColor = UIColor.clear.cgColor
         
         self.view.layer.addSublayer(shapeLayer)
-        
     }
     
     func addInstructionLabel() {
-    let textOfSubViewA = UILabel()
-    textOfSubViewA.frame = CGRect(x: view.bounds.minX + 20, y: view.bounds.maxY - 120, width: view.bounds.width - 40, height: 60)
-    textOfSubViewA.text = "Please scan any valid QR Code to charge your balance!"
-    textOfSubViewA.numberOfLines = 2
-    textOfSubViewA.textAlignment = NSTextAlignment.center
-    textOfSubViewA.textColor = UIColor.black
-    
-    self.view.addSubview(textOfSubViewA)
+        let textOfSubViewA = UILabel()
+        textOfSubViewA.frame = CGRect(x: view.bounds.minX + 20, y: view.bounds.maxY - 120, width: view.bounds.width - 40, height: 60)
+        textOfSubViewA.text = "Please scan any valid QR Code to charge your balance!"
+        textOfSubViewA.numberOfLines = 2
+        textOfSubViewA.textAlignment = NSTextAlignment.center
+        textOfSubViewA.textColor = UIColor.black
+        
+        self.view.addSubview(textOfSubViewA)
     }
     
     // Tutorials I refer to: https://www.youtube.com/watch?v=4Zf9dHDJ2yU and https://www.jianshu.com/p/9735421b94d1
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

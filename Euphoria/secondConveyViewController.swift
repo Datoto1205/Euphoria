@@ -2,14 +2,14 @@
 //  secondConveyViewController.swift
 //  Euphoria
 //
-//  Created by 李政恩 on 09/08/2018.
-//  Copyright © 2018 李政恩. All rights reserved.
+//  Created by Li Cheng-En in 2018.
+//  Copyright © 2018 Li Cheng-En. All rights reserved.
 //
 
 import UIKit
 
 class secondConveyViewController: UIViewController {
-
+    
     @IBAction func transferData(_ sender: UIButton) {
         transferString = mom.text
         generateNotification()
@@ -27,27 +27,10 @@ class secondConveyViewController: UIViewController {
     
     
     func generateNotification() {
-        let notification = Notification.Name("Hi")
+        let notification = Notification.Name("motherName")
         NotificationCenter.default.post(name: notification, object: nil, userInfo: ["PASS": transferString])
         // If I want to use notification to transfer the data, I need to set a post to generate the notification afterward. If I could return to the page with observer, I could activate the function I want.
     }
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Transfer the data throught the function "performSegue"
-        girlfriendInSecondPage.text = "Your girlfriend is " + AInSecondPage!
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         mom.resignFirstResponder()
@@ -59,14 +42,28 @@ class secondConveyViewController: UIViewController {
         //close the keyboard when pressed somewhere else on the screen
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Transfer the data throught the function "performSegue"
+        girlfriendInSecondPage.text = "Your girlfriend is " + AInSecondPage!
     }
-    */
-
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
