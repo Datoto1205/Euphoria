@@ -97,17 +97,32 @@ ninetyNineMultiplicationTable(From: 1, To: 9)
 
 
 // Class
-class specialValue {
+class specialValueClass {
     var amazingValue = 5
     func calculationOfSpecialValue(initialValue: Double) -> Double {
         return sin(initialValue + 5)
     }
 }
 
-var instantiateTheClass = specialValue()
+var instantiateTheClass = specialValueClass()
 print("\n" + String(instantiateTheClass.calculationOfSpecialValue(initialValue: 3.7)))
 print(instantiateTheClass.amazingValue)
 // If I want to extract a function or a variable in another class, I need to instantiate that class first. Afterward, I could use "." to extract what I want.
+
+var anotherSpecialValueClass = instantiateTheClass
+anotherSpecialValueClass.amazingValue += 5
+print(instantiateTheClass.amazingValue)
+print(anotherSpecialValueClass.amazingValue)
+// Since class is reference type, change the value of "proxy" variable would influence the value of original variable.
+
+class theOtherSpecialValueClass: specialValueClass {
+    override func calculationOfSpecialValue(initialValue: Double) -> Double {
+        let finalValue = initialValue + 5
+        return finalValue
+    }
+}
+let theOtherSpecialValueClassObj = theOtherSpecialValueClass()
+print(theOtherSpecialValueClassObj.calculationOfSpecialValue(initialValue: 12))
 
 
 
@@ -119,7 +134,58 @@ struct circle {
 var instantiateTheStruct = circle()
 print(instantiateTheStruct.radius)
 
+var anotherCircleStruct = instantiateTheStruct
+anotherCircleStruct.radius += 5
+print(instantiateTheStruct.radius)
+print(anotherCircleStruct.radius)
+// Since struct is value type, change the value of "proxy" variable would not influence the value of original variable.
+
 
 
 // Creation of Random Number
 print("\n" + String(arc4random_uniform(100)))
+
+
+
+// Closure
+let firstClosure = {() -> () in
+    print("Hello, closure!")
+}
+
+func equivalentFirstClosure() -> () {
+    print("Hello, closure!")
+}
+
+print("\n\n")
+firstClosure()
+equivalentFirstClosure()
+// Closure is just like a function without name, it could not be called alone, it only could be assign to a variable, or be used as a parameter of a function.
+// The codes above shows how to use closure to do some works.
+
+
+let secondClosure = {(herAge: Int) -> Int in
+    return herAge + 5
+}
+
+secondClosure(8)
+// The codes above shows how to use closure to return a variable.
+
+
+func closureFunction(year: Int, closure: () -> String) {
+    print("I have learned Swift for \(year) years, but I still did not knwo what is \(closure()). ")
+}
+
+closureFunction(year: 1, closure: {() -> String in
+    return "closure"
+})
+
+
+func add(One: Int, twoAndThree: (Int, Int) -> Int) {
+    print(One + twoAndThree(13, 18))
+}
+
+add(One: 1, twoAndThree: {(Two: Int, Three: Int) -> Int in
+    return Two + Three
+})
+// The codes above shows how to use closure as a parameter of a function.
+
