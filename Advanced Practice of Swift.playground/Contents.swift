@@ -67,6 +67,14 @@ changeTheType(Double: 7, String: "20")
 
 
 // Array & Function with Parameter of Array
+var wrongArray: [Int]? /* Use this way to declare an array is incorrect, I could not add more value into this array afterward. */
+var correctArray: [Int] = []
+
+wrongArray?.append(1)
+print(wrongArray?.count)   /* Failed */
+correctArray.append(1)
+print(correctArray.count)   /* Successful */
+
 var array = [1, 2, 3, 4, 5]
 array[4] = 6
 print("\n" + String(array.count + array[3]))
