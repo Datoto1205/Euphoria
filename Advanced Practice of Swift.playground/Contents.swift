@@ -5,14 +5,23 @@
 //  Copyright © 2018 Li Cheng-En. All rights reserved.
 //
 //  -------------------------------<Outline>-------------------------------
-//  Practice of Declaration of Function & Parameter                <Row 22>
-//  Practice of Declaration of Function & Return                   <Row 33>
-//  Practice of Declaration of Function & Change of Type of Data   <Row 50>
-//  Array & Function with Parameter of Array                       <Row 61>
-//  For-loop                                                       <Row 79>
-//  Class                                                         <Row 100>
-//  Struct                                                        <Row 115>
-//  Creation of Random Number                                     <Row 124>
+//  Practice of Declaration of Function & Parameter                <Row 30>
+//  Practice of Declaration of Function & Return                   <Row 41>
+//  Practice of Declaration of Function & Change of Type of Data   <Row 58>
+//  Array & Function with Parameter of Array                       <Row 69>
+//  For-loop                                                       <Row 87>
+//  Class                                                         <Row 108>
+//  Struct                                                        <Row 138>
+//  Creation of Random Number                                     <Row 154>
+//  Closure                                                       <Row 159>
+//  Dictionary - Declaration & Append & Remove                    <Row 203>
+//  Dictionary - Declaration with Arrays & For-loop               <Row 231>
+
+
+
+
+
+
 
 import Foundation
 
@@ -189,3 +198,57 @@ add(One: 1, twoAndThree: {(Two: Int, Three: Int) -> Int in
 })
 // The codes above shows how to use closure as a parameter of a function.
 
+
+
+// Dictionary - Declaration & Append & Remove
+var testDictionary = Dictionary<String, String>()
+/* [key:value] */
+
+testDictionary.updateValue("Alan", forKey: "First")
+print(testDictionary)
+testDictionary.count
+print(testDictionary.keys)
+print(testDictionary.values)
+print(testDictionary.keys.first!)
+print(testDictionary.values.first!)
+print("\n\n\n\n")
+
+
+testDictionary.updateValue("Betty", forKey: "Second")
+testDictionary.updateValue("Cindy", forKey: "Third")
+print(testDictionary)
+testDictionary.count
+print(testDictionary.keys)
+print(testDictionary.values)
+print(testDictionary.keys.first!)
+print(testDictionary.values.first!)
+print("\n\n\n\n")
+
+testDictionary.removeAll()
+print(testDictionary)
+
+
+// Dictionary - Declaration with Arrays & For-loop
+var keyOfDictionary = ["A", "B", "C", "D"]
+var valueOfDictionary = ["1", "2", "3", "4"]
+
+for i in 0...keyOfDictionary.count-1 {
+    testDictionary.updateValue(valueOfDictionary[i], forKey: keyOfDictionary[i])
+}
+print(testDictionary)
+
+for (valueOfDictionary) in testDictionary {
+    print(valueOfDictionary)
+}
+print("\n\n\n\n")
+
+for (keyOfDictionary, valueOfDictionary) in testDictionary {
+    print("\(valueOfDictionary)")
+    if "\(valueOfDictionary)" == "3" {
+        print(true)
+        print("\n")
+    } else {
+        print(false)
+        print("\n")
+    }
+}
